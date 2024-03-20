@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamy Delights</title>
+    <style>
+
+header img {
+            height: 80px;
+            width: 120px;
+            padding: 5px;
+        }
+
+        header {
+            position: relative;
+            background-color: #6a0d71;
+            padding: 5px 0;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+        }
+
+        h1 {
+            margin-left: 40%;
+            text-align: center;
+            color: #ffffff;
+            font-size: 32px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #eee;
+            border-bottom: 3px solid #333;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        nav a {
+            border-radius: 10px;
+            text-decoration: none;
+            border: 3px solid #333;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        nav a:hover {
+            background-color: gray;
+            color: #fff;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    z-index: 2;
+    background-image: url("../Images/Bakery3.jpeg");
+    background-size: cover;
+}
+
+.Menu-Container {
+    display: flex;
+    align-items: flex-start;
+    margin: 70px auto;
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 2000px;
+    overflow: visible;
+    justify-content: space-around; /* Added justify-content */
+}
+
+        .checkboxes {
+            position: fixed;
+            left: 0;
+            padding-left: 20px; /* Add padding for better spacing */
+        }
+
+        .checkbox-item {
+            margin-bottom: 10px;
+        }
+
+        .half {
+            
+    text-align: center;
+    margin: 15px;
+    border-radius: 25px;
+    position: relative;
+    padding: 15px;
+    width: 42%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    background-image: url("../Images/white.jpg");
+    opacity: 1;
+    border: 2px solid rgb(10, 4, 4);
+    margin-bottom: 20px;
+    min-width: 500px;
+}
+
+        footer {
+            background-color: #6a0d71;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        
+        .auth-buttons {
+            margin-right: 20px; /* Adjust as needed */
+        }
+
+        .signin-btn,
+        .login-btn {
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 15px;
+            color: black; /* Set button text color */
+            background-color: white;
+        }
+        .Signn
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .signin-btn:hover, .login-btn:hover{
+            color: red;
+        }
+
+        .imgg
+        {
+            height: 150px;
+            width: 120px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <header>
+        <h1>Dreamy Delights</h1>
+        <div class="auth-buttons">
+            <a href="../Files/Register.html" class="signin-btn Signn">Sign Up</a>
+            <a href="../Files/Login.html" class="login-btn Signn">Login</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../Files/About-Us.html">About Us</a>
+        <a href="../Files/Menu.html">Menu</a>
+    </nav>
+
+    <div class="Menu-Container">
+        <div class="checkboxes">
+            <div class="checkbox-item">
+                <input type="checkbox" id="cake" name="category" value="cake">
+                <label for="cake">Cake</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="brownies" name="category" value="brownies">
+                <label for="brownies">Brownies</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="muffins" name="category" value="muffins">
+                <label for="muffins">Muffins</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="cookies" name="category" value="cookies">
+                <label for="cookies">Cookies</label>
+            </div>
+        </div>
+
+        <div class="menu-items">
+            <section class="half" data-category="cake">
+                <img src="../Images/ChocolateCake.jpeg" class="imgg">
+                <p><b>Chocolate Cake</b></p>
+                <p>Rs 1500</p>
+                <button class="Order">Order Online</button>
+            </section>
+            <section class="half" data-category="cake">
+                <img src="../Images/StrawberryCake.jpeg" class="imgg">
+                <p><b>Strawberry Cake</b></p>
+                <p>Rs 1500</p>
+                <button class="Order">Order Online</button>
+            </section>
+            <section class="half" data-category="muffins">
+                <img src="../Images/ChocolateMuffin.jpeg" class="imgg">
+                <p><b>Chocolate Muffin</b></p>
+                <p>Rs 150</p>
+                <button class="Order">Order Online</button>
+            </section>
+
+
+            <section class="half" data-category="muffins">
+                <img src="../Images/StrawberryMuffin.jpeg" class="imgg">
+                <p><b>Strawberry Muffin</b></p>
+                <p>Rs 150</p>
+                <button class="Order">Order Online</button>
+            </section>
+            <section class="half" data-category="muffins">
+                <img src="../Images/BlueberryMuffin.jpeg" class="imgg">
+                <p><b>Blueberry Muffin</b></p>
+                <p>Rs 150</p>
+                <button class="Order">Order Online</button>
+            </section>
+            <section class="half" data-category="cake">
+                <img src="../Images/RedVelvetCake1.webp" class="imgg">
+                <p><b>RedVelvet Cake</b></p>
+                <p>Rs 1200</p>
+                <button class="Order">Order Online</button>
+            </section>
+            <section class="half" data-category="brownies">
+                <img src="../Images/WalnutBrownie.jpeg" class="imgg">
+                <p><b>Walnut Brownie</b></p>
+                <p>Rs 800</p>
+                <button class="Order">Order Online</button>
+            </section>
+            <section class="half" data-category="cookies">
+                <img src="../Images/ChocolateChipCookie.avif" class="imgg">
+                <p><b>Chocolate Chip Cookie</b></p>
+                <p>Rs 800</p>
+                <button class="Order">Order Online</button>
+            </section>
+
+            <section class="half" data-category="cookies">
+                <img src="../Images/PeanutCookie.jpeg" class="imgg">
+                <p><b>Peanut Cookie</b></p>
+                <p>Rs 800</p>
+                <button class="Order">Order Online</button>
+            </section>\
+
+            <section class="half" data-category="brownies">
+                <img src="../Images/FudgeBrownie.jpeg" class="imgg">
+                <p><b>Fudge Brownie</b></p>
+                <p>Rs 600</p>
+                <button class="Order">Order Online</button>
+            </section>
+            <section class="half" data-category="brownies">
+                <img src="../Images/Chocolate Brownie.jpeg" class="imgg">
+                <p><b>Chocolate Brownie</b></p>
+                <p>Rs 800</p>
+                <button class="Order">Order Online</button>
+            </section>
+
+            <section class="half" data-category="muffins">
+                <img src="../Images/ChocolateChipMuffins.webp" class="imgg">
+                <p><b>Chocolate Chip Muffins</b></p>
+                <p>Rs 250</p>
+                <button class="Order">Order Online</button>
+            </section>
+            <section class="half" data-category="brownies">
+                <img src="../Images/WalnutBrownie.jpeg" class="imgg">
+                <p><b>Walnut Brownie</b></p>
+                <p>Rs 800</p>
+                <button class="Order">Order Online</button>
+            </section>
+        </div>
+            </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get references to all checkbox elements
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    
+            // Get reference to the menu items container
+            const menuItems = document.querySelector('.menu-items');
+    
+            // Function to handle checkbox change events
+            function handleCheckboxChange(event) {
+                const checkbox = event.target;
+                const category = checkbox.value;
+    
+                // Uncheck all checkboxes except the current one
+                checkboxes.forEach(cb => {
+                    if (cb !== checkbox) {
+                        cb.checked = false;
+                    }
+                });
+    
+                // Hide all menu items initially
+                menuItems.querySelectorAll('.half').forEach(item => item.style.display = 'none');
+    
+                // If the current checkbox is checked, show menu items with matching data-category
+                if (checkbox.checked) {
+                    menuItems.querySelectorAll(`.half[data-category="${category}"]`).forEach(item => item.style.display = 'block');
+                }
+            }
+    
+            // Attach event listeners to all checkboxes
+            checkboxes.forEach(checkbox => checkbox.addEventListener('change', handleCheckboxChange));
+        });
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    </body>
+    </html>

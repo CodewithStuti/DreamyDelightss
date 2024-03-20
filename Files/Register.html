@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamy Delights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            z-index: 2;
+            background-image: url("../Images/Bakery3.jpeg");
+            background-size: cover;
+            
+        }
+
+ 
+
+        header img {
+            height: 80px;
+            width: 120px;
+            padding: 5px;
+        }
+
+        header {
+
+            position: relative;
+            background-color: #6a0d71;
+            padding: 5px 0;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 32px;
+            margin-left: 40%;
+        }
+
+
+        nav {
+            text-align: center;
+            background-color: #eee;
+            border-bottom: 3px solid #333;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        nav a {
+            border-radius: 10px;
+            text-decoration: none;
+            border: 3px solid #333;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        nav a:hover {
+            background-color: gray;
+            color: #fff;
+        }
+
+        .half {
+            position: relative;
+            padding: 15px;
+            width: 45%;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        footer {
+            background-color: #6a0d71;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .auth-buttons {
+            margin-right: 20px; /* Adjust as needed */
+        }
+
+        .signin-btn,
+        .login-btn {
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 15px;
+            color: black; /* Set button text color */
+            background-color: white;
+        }
+        .Signn
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .signin-btn:hover, .login-btn:hover{
+            color: red;
+        }
+
+
+        .register-form {
+            background-color: #ffffff;
+            border: 2px solid #6a0d71;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .register-form input[type="text"],
+        .register-form input[type="password"],
+        .register-form input[type="email"],
+        .register-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .register-form input[type="submit"] {
+            background-color: #6a0d71;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .register-form input[type="submit"]:hover {
+            background-color: #4b074e;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+
+    <header>
+        <h1>Dreamy Delights</h1>
+        <div class="auth-buttons">
+            <a href="../Files/Register.html" class="signin-btn Signn">Sign Up</a>
+            <a href="../Files/Login.html" class="login-btn Signn">Login</a>
+        </div>
+    </header>
+
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../Files/About-Us.html">About Us</a>
+        <a href="../Files/Menu.html">Menu</a>
+    </nav>
+    <br>
+    <div class="register-form">
+        <h2>Register</h2>
+        <form action="#" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="new-username" required>
+
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 Dreamy Delights - All Rights Reserved
+    </footer>
+
+</body>
+</html>
